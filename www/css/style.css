@@ -1,0 +1,34 @@
+/* Empty. Add your own CSS if you like */
+.card h2 {
+	font-size: 22px;
+}
+
+.card.new {
+	border-top: 5px solid #ef473a;
+}
+
+.card.new h2 {
+	color: #ef473a;
+}
+
+.card.started {
+	border-top: 5px solid #4a87ee;
+}
+
+.card.started h2 {
+	color: #4a87ee;
+}
+
+.card.completed {
+	border-top: 5px solid #33cd5f;
+}
+
+.card.completed h2 {
+	margin-bottom: 5px;
+	color: #33cd5f;
+}
+
+.card .icon {
+	font-size: 24px;
+	color: teal;
+}

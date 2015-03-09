@@ -1,0 +1,43 @@
+<ion-view view-title="">
+    
+   
+
+    <ion-content>
+        
+         <div style="text-align: center; margin-top:20px; " >
+            <img src="img/logo.gif" alt="Enviro LLC" />
+        </div>
+        <ul class="list" style="margin-bottom: 0;">
+            <li class="item item-toggle">
+                Signature Completed
+                <label class="toggle toggle-positive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item" style="clear: both;">
+              <div style="margin-left: 60px;">
+                    <p><b>Address :</b> </p>
+                    <p>{{job.address1}}{{job.address2}}{{job.address3}}</p>
+                    
+                    <p>{{job.address4}}</p>    
+                                     
+                </div>
+               
+                <div style="float: left;">
+                <canvas id='signatureCanvas' width='auto' height='100' style='border: 1px solid black;' ></canvas>
+         
+                    
+                </div>
+            
+            </li>
+        </ul>
+        <div class="padding">
+            <button class="button button-positive" ng-click="saveCanvas()" >
+                Save
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

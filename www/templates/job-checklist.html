@@ -1,0 +1,66 @@
+<ion-view view-title="Checklist">
+    <ion-content>
+        <div style="text-align: center; margin-top:20px;">
+            <img src="img/logo.gif" alt="Enviro LLC" />
+        </div>
+        <ul class="list" style="margin-bottom: 0;">
+            <li class="item item-toggle">
+                Has H&S has been complied with
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="job.health_and_safety_check">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                Before photos taken
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="job.before_pics_check">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                After photos taken
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="job.after_pics_check">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                Use of correct PPE check
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="job.ppe_check">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <li class="item item-toggle">
+                Has work been carried out to Enviro Group Procedure
+                <label class="toggle toggle-positive">
+                    <input type="checkbox" ng-model="job.procedures_followed_check">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    Job Rating
+                </div>
+                <select ng-model="job.job_rating" ng-options="o as o for o in ratings">           
+                </select>
+            </label>
+        </ul>
+        <div class="padding">
+            <button class="button button-positive" ng-click="save(job)">
+                Save
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,30 @@
+<ion-view view-title="{{job.order_name}}">
+    <ion-content>
+    <div style="text-align: center; margin-top:20px; " >
+        <img src="img/logo.gif" alt="Enviro LLC" />
+    </div>
+    <div ng-hide="job.job_completed" class="padding">
+        <button class="button icon-left ion-gear-a button-positive"  ng-click="activate(job)">&nbsp;{{!job.job_started && !job.job_completed ? 'Start' : 'Complete'}}</button>
+    </div>
+    <div class="list">
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/signature">
+            <i class="icon ion-email"></i>
+            Signature
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/checklist">
+            <i class="icon ion-android-clipboard"></i>
+            Job Details
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/feedbackdetails">
+            <i class="icon icon ion-android-chat"></i>
+            Feed Back
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+    </div>
+    <div class="padding">
+        <p>ORDER DATE: {{job.order_on}}</p>
+        <p>CUSTOMER: {{job.customer_name}}</p>
+    </div>
+</ion-view>

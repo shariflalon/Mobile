@@ -1,0 +1,20 @@
+<ion-view view-title="Latest Jobs">
+    
+
+    <ion-content class="padding">
+         <div style="text-align: center; margin-top:20px; " >
+            <img src="img/logo.gif" alt="Enviro LLC" />
+        </div>
+        <div class="card completed" ng-repeat="job in jobs track by job.id">
+            <div>
+                <a href="#/tab/jobs/{{job.id}}" class="item item-icon-right">
+                    <i class="icon ion-android-checkbox-outline"></i>
+                    <h2>{{job.order_name}}</h2>
+                    <p>ORDER DATE: {{job.order_on}}</p>
+                    <p>CUSTOMER: {{job.customer_name}}</p>
+                </a>
+            </div>
+
+        </div>
+    </ion-content>
+</ion-view>

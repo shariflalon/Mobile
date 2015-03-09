@@ -1,0 +1,27 @@
+<ion-view view-title="{{job.order_name}}">
+    <ion-content>
+    <div style="text-align: center; margin-top:20px; " >
+        <img src="img/logo.gif" alt="Enviro LLC" />
+    </div>
+    <div class="list">
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/feedback/customer">
+            <i class="icon ion-android-chat"></i>
+            Customer Comments
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/feedback/internal">
+            <i class="icon ion-android-chat"></i>
+            Internal Notes
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+        <a class="item item-icon-left item-icon-right" href="#/tab/jobs/{{job.id}}/feedback/oprations">
+            <i class="icon ion-android-chat"></i>
+            Operations Manager Notes/HVAC Notes
+            <i class="icon ion-ios-arrow-forward"></i>
+        </a>
+    </div>
+    <div class="padding">
+        <p>ORDER DATE: {{job.order_on}}</p>
+        <p>CUSTOMER: {{job.customer_name}}</p>
+    </div>
+</ion-view>
